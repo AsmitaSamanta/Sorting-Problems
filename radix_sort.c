@@ -1,0 +1,265 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct link
+{
+int x;
+struct link *next;
+};
+typedef struct link node;
+int main()
+{
+int d,max,i,n,p,*a;
+node *new,*s0=NULL,*s1=NULL,*s2=NULL,*s3=NULL,*s4=NULL,*s5=NULL,*s6=NULL,*s7=NULL,*s8=NULL,*s9=NULL;
+node *e0=NULL,*e1=NULL,*e2=NULL,*e3=NULL,*e4=NULL,*e5=NULL,*e6=NULL,*e7=NULL,*e8=NULL,*e9=NULL;
+printf("Enter the number of element in array :");
+scanf("%d",&n);
+a=(int *)malloc(n*(sizeof(int)));
+printf("Enter the array elements : ");
+for(i=0;i<n;i++)
+	scanf("%d",&a[i]);
+max=a[0];
+for(i=0;i<n;i++)
+	if(a[i]>max)
+		max=a[i];
+for(d=1;(max/d)>0;d=d*10)
+{
+	for(i=0;i<n;i++)
+	{
+		p=(a[i]/d)%10;
+		if(p==0)
+		{
+			new=(node*)malloc(sizeof(node));
+			new->x=a[i];
+			new->next=NULL;
+			if(s0==NULL)
+			{
+				s0=new;
+				e0=s0;
+			}
+			else
+			{
+				e0->next=new;
+				e0=e0->next;
+			}
+		}
+
+		if(p==1)
+		{
+			new=(node*)malloc(sizeof(node));
+			new->x=a[i];
+			new->next=NULL;
+			if(s1==NULL)
+			{
+				s1=new;
+				e1=s1;
+			}
+			else
+			{
+				e1->next=new;
+				e1=e1->next;
+			}
+		}
+
+		if(p==2)
+		{
+			new=(node*)malloc(sizeof(node));
+			new->x=a[i];
+			new->next=NULL;
+			if(s2==NULL)
+			{
+				s2=new;
+				e2=s2;
+			}
+			else
+			{
+				e2->next=new;
+				e2=e2->next;
+			}
+		}
+		
+		if(p==3)
+		{
+			new=(node*)malloc(sizeof(node));
+			new->x=a[i];
+			new->next=NULL;
+			if(s3==NULL)
+			{
+				s3=new;
+				e3=s3;
+			}
+			else
+			{
+				e3->next=new;
+				e3=e3->next;
+			}
+		}
+
+		if(p==4)
+		{
+			new=(node*)malloc(sizeof(node));
+			new->x=a[i];
+			new->next=NULL;
+			if(s4==NULL)
+			{
+				s4=new;
+				e4=s4;
+			}
+			else
+			{
+				e4->next=new;
+				e4=e4->next;
+			}
+		}
+
+		if(p==5)
+		{
+			new=(node*)malloc(sizeof(node));
+			new->x=a[i];
+			new->next=NULL;
+			if(s5==NULL)
+			{
+				s5=new;
+				e5=s5;
+			}
+			else
+			{
+				e5->next=new;
+				e5=e5->next;
+			}
+		}
+
+		if(p==6)
+		{
+			new=(node*)malloc(sizeof(node));
+			new->x=a[i];
+			new->next=NULL;
+			if(s6==NULL)
+			{
+				s6=new;
+				e6=s6;
+			}
+			else
+			{
+				e6->next=new;
+				e6=e6->next;
+			}
+		}
+
+		if(p==7)
+		{
+			new=(node*)malloc(sizeof(node));
+			new->x=a[i];
+			new->next=NULL;
+			if(s7==NULL)
+			{
+				s7=new;
+				e7=s7;
+			}
+			else
+			{
+				e7->next=new;
+				e7=e7->next;
+			}
+		}
+
+		if(p==8)
+		{
+			new=(node*)malloc(sizeof(node));
+			new->x=a[i];
+			new->next=NULL;
+			if(s8==NULL)
+			{
+				s8=new;
+				e8=s8;
+			}
+			else
+			{
+				e8->next=new;
+				e8=e8->next;
+			}
+		}
+
+		if(p==9)
+		{
+			new=(node*)malloc(sizeof(node));
+			new->x=a[i];
+			new->next=NULL;
+			if(s9==NULL)
+			{
+				s9=new;
+				e9=s9;
+			}
+			else
+			{
+				e9->next=new;
+				e9=e9->next;
+			}
+		}
+	}
+	i=0;
+	while(s0!=NULL)
+	{
+		a[i]=s0->x;
+		s0=s0->next;
+		i++;
+	}
+	while(s1!=NULL)
+	{
+		a[i]=s1->x;
+		s1=s1->next;
+		i++;
+	}
+	while(s2!=NULL)
+	{
+		a[i]=s2->x;
+		s2=s2->next;
+		i++;
+	}
+	while(s3!=NULL)
+	{
+		a[i]=s3->x;
+		s3=s3->next;
+		i++;
+	}
+	while(s4!=NULL)
+	{
+		a[i]=s4->x;
+		s4=s4->next;
+		i++;
+	}
+	while(s5!=NULL)
+	{
+		a[i]=s5->x;
+		s5=s5->next;
+		i++;
+	}
+	while(s6!=NULL)
+	{
+		a[i]=s6->x;
+		s6=s6->next;
+		i++;
+	}
+	while(s7!=NULL)
+	{
+		a[i]=s7->x;
+		s7=s7->next;
+		i++;
+	}
+	while(s8!=NULL)
+	{
+		a[i]=s8->x;
+		s8=s8->next;
+		i++;
+	}
+	while(s9!=NULL)
+	{
+		a[i]=s9->x;
+		s9=s9->next;
+		i++;
+	}
+}
+printf("\nThe sorted array is : \n");
+for(i=0;i<n;i++)
+	printf("%d  ",a[i]);
+printf("\n\n");
+}
